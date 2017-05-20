@@ -2,12 +2,18 @@ section {
   min-height: 100vh;
   border-top: 1px solid lime;
 }
+.section_title {
+  font-size: 50px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
 /*
   buttons
 */
 .btn {
   border-width: 3px;
-  border-radius: 1px;
+  border-radius: 2px;
   font-weight: bold;
 }
 .btn-white {

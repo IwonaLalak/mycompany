@@ -1,6 +1,7 @@
 <!--
 -- created by Iwona `SZEFOW4` Lalak
 -- 20.05.2017
+-- images from freepik.com
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="h1 special_font">
+                <div class="h1 section_title special_font">
                     about us
                 </div>
             </div>
@@ -52,7 +53,9 @@
                         <p class="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
                 </div>
@@ -71,7 +74,9 @@
                         <p class="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
                 </div>
@@ -90,7 +95,9 @@
                         <p class="text-justify last_paragraph">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
                 </div>
@@ -100,13 +107,89 @@
 </section>
 
 <!-- divider 1 -->
-<div id="DIVIDER_1">
-
-</div>
+<div id="DIVIDER_1"></div>
 
 <!-- our products -->
 <section id="PRODUCTS">
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h1 section_title special_font">
+                    our products
+                </div>
+            </div>
+        </div>
+        <div class="row" id="list_of_products">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="thumbnail" id="product_1">
+                    <div class="product_image">
+                        <img src="images/works/p1.jpg" alt="work1"/>
+                        <p>
+                            project 1
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <div class="product_description">
+                        <div class="h2 special_font">
+                            website 1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="thumbnail" id="product_2">
+                    <div class="product_image">
+                        <img src="images/works/p2.jpg" alt="work1"/>
+                        <p>
+                            project 2
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <div class="product_description">
+                        <div class="h2 special_font">
+                            website 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="thumbnail" id="product_3">
+                    <div class="product_image">
+                        <img src="images/works/p3.jpg" alt="work1"/>
+                        <p>
+                            project 3
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <div class="product_description">
+                        <div class="h2 special_font">
+                            website 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="thumbnail" id="product_4">
+                    <div class="product_image">
+                        <img src="images/works/p4.jpg" alt="work1"/>
+                        <p>
+                            project 4
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                    </div>
+                    <div class="product_description">
+                        <div class="h2 special_font">
+                            website 4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- our team -->
@@ -115,9 +198,7 @@
 </section>
 
 <!-- divider 2 -->
-<div id="DIVIDER_2">
-
-</div>
+<div id="DIVIDER_2"></div>
 
 <!-- contact us -->
 <section id="CONTACT">
@@ -133,3 +214,87 @@
 
 <script src="resources/bower_components/jquery/dist/jquery.js"></script>
 <script src="resources/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<script>
+
+    $(".thumbnail").on("click", function () {
+        if (this.id == "product_1") {
+            var paragraph = $("#product_1 p");
+            var image = $("#product_1 img");
+            if (paragraph.css("display") == "none") {
+                var width = image.css("width");
+                var height = image.css("height");
+                paragraph.css("display", "block");
+                paragraph.css("width", width);
+                paragraph.css("height", height);
+                paragraph.css("transform", "translateY(-" + height + ")");
+                paragraph.fadeOut(1);
+                paragraph.fadeIn();
+            }
+            else {
+                paragraph.css("display", "none");
+                paragraph.fadeIn(1);
+                paragraph.fadeOut();
+            }
+        }
+        else if (this.id == "product_2") {
+            var paragraph = $("#product_2 p");
+            var image = $("#product_2 img");
+            if (paragraph.css("display") == "none") {
+                var width = image.css("width");
+                var height = image.css("height");
+                paragraph.css("display", "block");
+                paragraph.css("width", width);
+                paragraph.css("height", height);
+                paragraph.css("transform", "translateY(-" + height + ")");
+                paragraph.fadeOut(1);
+                paragraph.fadeIn();
+            }
+            else {
+                paragraph.css("display", "none");
+                paragraph.fadeIn(1);
+                paragraph.fadeOut();
+            }
+        }
+        else if (this.id == "product_3") {
+            var paragraph = $("#product_3 p");
+            var image = $("#product_3 img");
+            if (paragraph.css("display") == "none") {
+                var width = image.css("width");
+                var height = image.css("height");
+                paragraph.css("display", "block");
+                paragraph.css("width", width);
+                paragraph.css("height", height);
+                paragraph.css("transform", "translateY(-" + height + ")");
+                paragraph.fadeOut(1);
+                paragraph.fadeIn();
+            }
+            else {
+                paragraph.css("display", "none");
+                paragraph.fadeIn(1);
+                paragraph.fadeOut();
+            }
+        }
+        else if (this.id == "product_4") {
+            var paragraph = $("#product_4 p");
+            var image = $("#product_4 img");
+            if (paragraph.css("display") == "none") {
+                var width = image.css("width");
+                var height = image.css("height");
+                paragraph.css("width", width);
+                paragraph.css("height", height);
+                paragraph.css("transform", "translateY(-" + height + ")");
+                paragraph.css("display", "block");
+                paragraph.fadeOut(1);
+                paragraph.fadeIn();
+            }
+            else {
+                paragraph.css("display", "none");
+                paragraph.fadeIn(1);
+                paragraph.fadeOut();
+            }
+        }
+    });
+
+</script>
+
