@@ -1,0 +1,43 @@
+#ABOUT {
+  background: #eee;
+}
+#ABOUT .h1 {
+  font-size: 50px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+#ABOUT .glyphicon {
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 100px;
+  border-radius: 60px;
+  background: linear-gradient(to right, #ffffff 50%, #1c5784 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 1.5s ease;
+  margin-top: 25%;
+}
+@media screen and (max-width: 991px) {
+  #ABOUT .glyphicon {
+    margin-top: 15%;
+  }
+}
+#ABOUT .glyphicon:hover {
+  background-position: right bottom;
+  color: #fff;
+}
+#ABOUT .h2 {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: #1c5784;
+}
+@media screen and (max-width: 991px) {
+  #ABOUT .last_paragraph {
+    margin-bottom: 15px;
+  }
+}

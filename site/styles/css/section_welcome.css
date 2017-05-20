@@ -1,0 +1,59 @@
+#WELCOME {
+  background: url("../../images/bg/bg1.jpg") no-repeat center center;
+  background-size: 100%;
+}
+@media screen and (max-width: 992px) {
+  #WELCOME {
+    background-size: 200%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #WELCOME {
+    background-size: 300%;
+  }
+}
+@media screen and (max-width: 380px) {
+  #WELCOME {
+    background-size: 400%;
+  }
+}
+#WELCOME .jumbotron {
+  transform: translate(0, 55%);
+  background: transparent;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  #WELCOME .jumbotron {
+    transform: translate(0, 20%);
+    font-size-adjust: 0.4;
+  }
+}
+@media screen and (max-width: 380px) {
+  #WELCOME .jumbotron {
+    transform: translate(0, 10%);
+  }
+}
+#WELCOME .jumbotron h1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 75px;
+  color: #fff;
+}
+#WELCOME .jumbotron .welcome_button {
+  transform: translate(0, 20%);
+  font-size: 25px;
+  padding: 12px 24px;
+  background: linear-gradient(to right, transparent 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 1.5s ease;
+}
+#WELCOME .jumbotron .welcome_button:hover {
+  color: #1c5784;
+  background-position: right bottom;
+}
+#WELCOME .jumbotron .welcome_button:active,
+#WELCOME .jumbotron .welcome_button:focus {
+  color: #1c5784;
+  background: #fff;
+}

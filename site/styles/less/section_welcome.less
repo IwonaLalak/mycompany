@@ -1,0 +1,51 @@
+@import "variables";
+
+#WELCOME {
+  background: url("../../images/bg/bg1.jpg") no-repeat center center;
+  background-size: 100%;
+  @media screen and (max-width: 992px) {
+    background-size: 200%;
+  }
+  @media screen and (max-width: 500px) {
+    background-size: 300%;
+  }
+  @media screen and (max-width: 380px) {
+    background-size: 400%;
+  }
+  .jumbotron {
+    transform: translate(0, 55%);
+    @media screen and (max-width: 500px) {
+      transform: translate(0, 20%);
+      font-size-adjust: 0.4;
+    }
+    @media screen and (max-width: 380px) {
+      transform: translate(0, 10%);
+    }
+    background: transparent;
+    text-align: center;
+    h1 {
+      margin-left: 10px;
+      margin-right:10px;
+      font-size: 75px;
+      color: #fff;
+    }
+    .welcome_button {
+      transform: translate(0, 20%);
+      font-size: 25px;
+      padding: 12px 24px;
+      background: linear-gradient(to right, transparent 50%, #fff 50%);
+      background-size: 200% 100%;
+      background-position: left bottom;
+      transition: all 1.5s ease;
+    }
+    .welcome_button:hover {
+      color: @primary-color;
+      background-position: right bottom;
+    }
+    .welcome_button:active, .welcome_button:focus{
+      color: @primary-color;
+      background: #fff;
+    }
+    
+  }
+}
