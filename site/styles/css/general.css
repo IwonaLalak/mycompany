@@ -1,6 +1,5 @@
 section {
   min-height: 100vh;
-  border-top: 1px solid lime;
 }
 .section_title {
   font-size: 50px;
@@ -26,4 +25,9 @@ section {
 .btn-white:active {
   color: #fff;
   border-color: #fff;
+}
+.btn-blue {
+  background: transparent;
+  color: #1c5784;
+  border-color: #1c5784;
 }
